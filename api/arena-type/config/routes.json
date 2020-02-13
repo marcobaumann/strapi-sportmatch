@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/arena-types",
+      "handler": "arena-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arena-types/count",
+      "handler": "arena-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arena-types/:id",
+      "handler": "arena-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/arena-types",
+      "handler": "arena-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/arena-types/:id",
+      "handler": "arena-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/arena-types/:id",
+      "handler": "arena-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

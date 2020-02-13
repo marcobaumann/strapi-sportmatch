@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "Location",
+    "icon": "globe-americas"
+  },
+  "options": {},
+  "attributes": {
+    "Latitude": {
+      "type": "float"
+    },
+    "Longitude": {
+      "type": "float"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_location_locations"
+}

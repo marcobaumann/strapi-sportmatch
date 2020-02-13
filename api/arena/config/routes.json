@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/arenas",
+      "handler": "arena.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arenas/count",
+      "handler": "arena.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arenas/:id",
+      "handler": "arena.findOne",
+      "config": {
+        "policies": ["isArenaStaff"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/arenas",
+      "handler": "arena.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/arenas/:id",
+      "handler": "arena.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/arenas/:id",
+      "handler": "arena.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

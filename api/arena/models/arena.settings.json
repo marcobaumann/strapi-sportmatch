@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "arenas",
+  "info": {
+    "name": "Arena"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "PhotoGallery": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "location.location"
+    },
+    "OpeningHours": {
+      "type": "component",
+      "repeatable": true,
+      "component": "opening-hours.opening-hours"
+    },
+    "arenaTypes": {
+      "collection": "arena-type"
+    },
+    "Staff": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

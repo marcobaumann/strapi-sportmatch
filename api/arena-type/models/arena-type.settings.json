@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "arena_types",
+  "info": {
+    "name": "ArenaType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "components_opening_hours_opening_hours",
+  "info": {
+    "name": "OpeningHours",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "OpeningDay": {
+      "type": "enumeration",
+      "enum": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ]
+    },
+    "OpeningHour": {
+      "type": "time"
+    },
+    "ClosingHour": {
+      "type": "time"
+    }
+  }
+}
